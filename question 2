@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	float age;
+	cout<<"enter the age:";
+	cin>>age;
+	if(age>0&&age<18)
+	cout<<"you are a minor and you are not eligible to vote";
+	else if(age>=18)
+	cout<<"you are a major and you can cast your vote";
+	else
+	cout<<"enter valid age";
+	
+}
