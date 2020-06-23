@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class clock
+{
+		public:
+	int hrs;
+	int min;
+	int sec;
+
+		void display()
+		{
+			cout<<"the time is = ";
+			cout<<hrs<<":";
+			cout<<min<<":";
+			cout<<sec<<endl;
+		}
+		int convertintosec()
+		{
+			int total;
+			total=hrs*3600+min*60+sec;
+			cout<<"time in total seconds: "<<total;
+		}
+		
+};
+int main()
+{
+	clock c;
+	cout<<"enter time:"<<endl;
+	cout<<"hours? ";
+	cin>>c.hrs;
+	cout<<"minutes? ";
+	cin>>c.min;
+	cout<<"seconds? ";
+	cin>>c.sec;
+	c.display();
+	c.convertintosec();
+	
+}
